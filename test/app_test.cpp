@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
-#include "../include/api.h"
-#include "../include/service.h"
-#include "../include/repository.h"
+#include "../include/interface/api.h"
+#include "../include/services/service.h"
+#include "../include/repositories/repository.h"
 
 struct StubCargoProvider : services::CargoProvider{
     int cargo_id;

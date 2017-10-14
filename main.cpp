@@ -1,9 +1,9 @@
 #include <iostream>
-#include "model.h"
-#include "repository.h"
-#include "service.h"
-#include "gateway.h"
-#include "api.h"
+#include "domain/model.h"
+#include "repositories/repository.h"
+#include "services/service.h"
+#include "gateways/gateway.h"
+#include "interface/api.h"
 
 using namespace domain;
 using namespace repositories;
