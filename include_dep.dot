@@ -1,0 +1,59 @@
+digraph G {
+	node12->node5[ style="solid" ];
+	node5->node1[ style="solid" ];
+	node3->node4[ style="solid" ];
+	node1->node4[ style="solid" ];
+	node6->node5[ style="solid" ];
+	node12->node9[ style="solid" ];
+	node8->node9[ style="solid" ];
+	node5->node7[ style="solid" ];
+	node11->node10[ style="solid" ];
+	node9->node1[ style="solid" ];
+	node12->node1[ style="solid" ];
+	node2->node1[ style="solid" ];
+	node4->node10[ style="solid" ];
+	node12->node4[ style="solid" ];
+	subgraph cluster1 {
+	label="services";
+	node1 [ label="service.h", shape=box ];
+	node2 [ label="service.cpp", shape=box ];
+
+}
+;
+	subgraph cluster2 {
+	label="repositories";
+	node3 [ label="repository.cpp", shape=box ];
+	node4 [ label="repository.h", shape=box ];
+
+}
+;
+	subgraph cluster3 {
+	label="interface";
+	node5 [ label="api.h", shape=box ];
+	node6 [ label="cargo_api.cpp", shape=box ];
+	node7 [ label="msg.h", shape=box ];
+
+}
+;
+	subgraph cluster4 {
+	label="gateways";
+	node8 [ label="gateway.cpp", shape=box ];
+	node9 [ label="gateway.h", shape=box ];
+
+}
+;
+	subgraph cluster5 {
+	label="domain";
+	node10 [ label="model.h", shape=box ];
+	node11 [ label="model.cpp", shape=box ];
+
+}
+;
+	subgraph cluster6 {
+	label="main";
+	node12 [ label="main.cpp", shape=box ];
+
+}
+;
+
+}
